@@ -140,9 +140,15 @@ def testimonial_success(request):
 
 from django.http import JsonResponse
 from django.db import connection
+from .models import Project, Testimonial
 
 
 def database_check(request):
+    with connection.cursor() as cursor:
+        tables = connection.introspection.table_names()
+
     return JsonResponse({
         "database": connection.vendor,
+        "project_table_exists": Project._meta.db_table in tables,
+        "testimonial_table_exists": Testimonial._meta.db_table in tables,
     })
