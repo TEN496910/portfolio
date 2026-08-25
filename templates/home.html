@@ -1,0 +1,1507 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Augustine Miracle Samuel — Professional Web Developer, Python Developer and GIS Specialist.">
+    <meta name="author" content="Augustine Miracle Samuel">
+
+    <!-- Primary SEO -->
+    <title>
+        Augustine Miracle Samuel | Portforlio
+    </title>
+
+  <meta name="application-name" content="Augustine Miracle Samuel Portfolio">
+
+<meta
+    name="apple-mobile-web-app-title"
+    content="Augustine Miracle Samuel"
+>
+
+<meta
+    name="mobile-web-app-capable"
+    content="yes"
+>
+
+    <!-- =========================================================
+                        SEO & SOCIAL MEDIA META
+     ========================================================= -->
+
+<meta
+    name="description"
+    content="Augustine Miracle Samuel — Web Developer, Python Developer and Technology Professional specializing in modern, responsive and user-focused digital solutions."
+>
+
+<meta
+    name="keywords"
+    content="Augustine Miracle Samuel, web developer, Python developer, Django developer, frontend developer, backend developer, portfolio, Nigeria"
+>
+
+<meta name="author" content="Augustine Miracle Samuel">
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<!-- Open Graph / Social Sharing -->
+
+<meta
+    property="og:title"
+    content="Augustine Miracle Samuel | Web Developer & Technology Professional"
+>
+
+<meta
+    property="og:description"
+    content="Explore the portfolio, projects, skills and services of Augustine Miracle Samuel."
+>
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:image"
+    content="YOUR-PORTFOLIO-PREVIEW-IMAGE"
+>
+
+<!-- Twitter / X -->
+
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+<meta
+    name="twitter:title"
+    content="Augustine Miracle Samuel | Web Developer"
+>
+
+<meta
+    name="twitter:description"
+    content="Explore the portfolio, projects, skills and services of Augustine Miracle Samuel."
+>
+
+<meta
+    name="twitter:image"
+    content="YOUR-PORTFOLIO-PREVIEW-IMAGE"
+>
+
+<meta name="theme-color" content="#2563eb">
+
+
+  <!-- =========================================================
+                              STRUCTURED DATA
+     ========================================================= -->
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Augustine Miracle Samuel",
+    "jobTitle": "Web Developer",
+    "description": "Web developer and technology professional specializing in modern, responsive and user-focused digital solutions.",
+    "url": "YOUR-PORTFOLIO-URL"
+}
+</script>
+
+
+    <!-- CANNONICAL URL -->
+    <link
+        rel="canonical"
+        href="https://your-domain.com/"
+    >
+
+
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="{% static 'imgs/favicon.png' %}"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+  <!-- ==================== PAGE LOADER ==================== -->
+<div class="page-loader" id="page-loader">
+
+    <div
+        class="loader-spinner"
+        aria-label="Loading"
+        role="status"
+    ></div>
+
+</div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-mark">AM</span>
+                <span class="logo-text">Augustine.</span>
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="menu-toggle"
+            aria-label="Toggle navigation menu" aria-expanded="false" 
+            aria-controls="nav-menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-times"></i>
+          </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==================== MAIN ================================ -->
+    <main>
+      <!-- ==================== HERO SECTION ==================== -->
+      <section class="hero section" id="home">
+        
+        <div class="container hero-container">
+          
+          <!-- Hero Content -->
+          <div class="hero-content">
+            
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+                Available for opportunities
+            </div>
+
+            <p class="hero-intro">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Augustine Miracle
+                <span>Samuel</span>
+            </h1>
+
+            <h2>
+                Web Developer <span class="title-divider">|</span> Python Developer
+            </h2>
+
+            <p class="hero-description">
+                I design and build responsive websites and practical
+                digital solutions with a focus on clean design,
+                functionality and user experience.
+            </p>
+
+            <div class="hero-buttons">
+
+              <a href="#projects" class="btn btn-primary">
+                View My Work
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                Let's Talk
+                <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              
+              <a href="#" aria-label="GitHub">
+                
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                 <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="#" aria-label="WhatsApp">
+                 <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            
+            </div>
+          
+          </div>
+
+
+         <!-- Hero Visual -->
+         <div class="hero-visual">
+           
+           <figure class="hero-image-wrapper">
+               
+               <!-- Authos Image -->
+                <img src="{% static 'icons/author.png' %}" 
+                  alt="Miracle Augustine S." >
+             
+           </figure>
+
+
+           <!-- Floating Technology Cards -->
+
+           <div class="floating-card floating-card-one">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+           </div>
+
+           <div class="floating-card floating-card-two">
+              <i class="fa-solid fa-code"></i>
+              <span>Web Dev</span>
+           </div>
+
+           <div class="floating-card floating-card-three">
+              <i class="fa-solid fa-database"></i>
+              <span>Backend</span>
+           </div>
+         
+         </div>
+        
+        </div>
+      
+      </section>
+
+
+     <!-- ==================== ABOUT SECTION ==================== -->
+     <section class="about section" id="about">
+       
+       <div class="container">
+         
+         <div class="section-heading">
+           
+           <p class="section-subtitle">Get To Know Me</p>
+           <h2>About <span>Me</span></h2>
+         </div>
+         
+         <div class="about-container reveal">
+
+            <!-- About Visual -->
+            <div class="about-visual">
+
+                <figure class="about-image-wrapper">
+                  <!-- About Img -->
+                  <img src="{% static 'icons/digitalsolu.png' %}" 
+                    alt="Digital Solutions and Technology illustration" loading="lazy"
+                    decoding="async">
+
+                </figure>
+
+
+                <!-- Experience Badge -->
+                <div class="about-badge">
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                    <div>
+                        <strong>Developer</strong>
+                        <span>Building & Learning</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- About Content -->
+            <div class="about-content">
+
+                <p class="about-label">
+                    WHO I AM
+                </p>
+
+                <h3>
+                    Building useful digital solutions through technology.
+                </h3>
+
+                <p>
+                    I'm Augustine Miracle Samuel, a developer with a
+                    background in Geography and Environmental Management
+                    and a growing focus on technology and software
+                    development.
+                </p>
+
+                <p>
+                    I work with technologies such as HTML, CSS, JavaScript
+                    and Python, while exploring backend development,
+                    databases, GIS, data analysis and Cybersecurity.
+                </p>
+
+                <p>
+                    My goal is to combine technical skills, creativity and
+                    problem-solving to build digital products that are
+                    practical, responsive and easy to use.
+                </p>
+
+
+                <!-- About Stats -->
+                <div class="about-stats">
+
+                    <div class="about-stat">
+                        <strong>Web</strong>
+                        <span>Development</span>
+                    </div>
+
+                    <div class="about-stat">
+                        <strong>Python</strong>
+                        <span>Development</span>
+                    </div>
+
+                    <div class="about-stat">
+                        <strong>GIS</strong>
+                        <span>& Data</span>
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="btn btn-primary">
+                    Let's Work Together
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== SKILLS SECTION ==================== -->
+<section class="skills section" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">What I Work With</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+
+        <div class="skills-container reveal">
+
+            <!-- Technical Skills -->
+            <div class="skills-content">
+
+                <p class="skills-label">
+                    TECHNICAL TOOLKIT
+                </p>
+
+                <h3>
+                    Technologies I use to build and solve problems.
+                </h3>
+
+                <p class="skills-description">
+                    I'm continuously developing my skills across frontend
+                    development, Python programming, backend technologies,
+                    geospatial tools and data-related workflows.
+                </p>
+
+
+                <div class="skills-list">
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>HTML</h4>
+                            <span>Web Structure</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>CSS</h4>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <span>Web Interactivity</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <span>Programming</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>Django</h4>
+                            <span>Backend Development</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div class="skill-info">
+                            <h4>Databases</h4>
+                            <span>Data Management</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Expertise -->
+            <div class="expertise-content">
+
+                <p class="skills-label">
+                    AREAS OF EXPERTISE
+                </p>
+
+                <h3>
+                    Combining technology with problem-solving.
+                </h3>
+
+
+                <div class="expertise-grid">
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h4>Web Development</h4>
+
+                        <p>
+                            Responsive websites and modern frontend
+                            experiences.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <h4>Python Development</h4>
+
+                        <p>
+                            Python applications, scripting and
+                            solid backend development.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+
+                        <h4>GIS</h4>
+
+                        <p>
+                            Geographic data, mapping and spatial analysis.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+
+                        <h4>Data Analysis</h4>
+
+                        <p>
+                            Working with data to identify useful insights and decision making.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h4>Cybersecurity</h4>
+
+                        <p>
+                            Security concepts and safer digital systems.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <h4>Database Management</h4>
+
+                        <p>
+                            Organizing and managing structured information.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== SERVICES SECTION ==================== -->
+<section class="services section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">What I Do</p>
+            <h2>My <span>Services</span></h2>
+        </div>
+
+
+        <div class="services-grid reveal">
+
+            <!-- Service 01 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">01</span>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Building responsive and modern websites that work
+                    smoothly across all IoT devices.
+                </p>
+
+                <div class="service-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Service 02 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">02</span>
+
+                    <div class="service-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                </div>
+
+                <h3>Penetration Testing and Network Security</h3>
+
+                <p>
+                  Protects network infrastructure with firewalls, IDS/IPS, 
+                  segmentation, and monitoring while simulating real-world attacks 
+                  to uncover exploitable vulnerabilities.
+                </p>
+
+                <div class="service-tags">
+                    <span>Arch Linux</span>
+                    <span>Kali Linux</span>
+                    <span>OPNsence</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Service 03 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">03</span>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                </div>
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Creating backend functionality and web applications
+                    using Python and Node.js.
+                </p>
+
+                <div class="service-tags">
+                    <span>Django</span>
+                    <span>Node.js</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Service 04 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">04</span>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                </div>
+
+                <h3>Database Management</h3>
+
+                <p>
+                    Working with structured data and database systems to
+                    organize and manage information effectively.
+                </p>
+
+                <div class="service-tags">
+                    <span>Database</span>
+                    <span>SQL</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Service 05 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">05</span>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                </div>
+
+                <h3>Data Analysis</h3>
+
+                <p>
+                    Exploring and interpreting data to produce useful
+                    information that can support better decisions.
+                </p>
+
+                <div class="service-tags">
+                    <span>Data</span>
+                    <span>Analysis</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Service 06 -->
+            <article class="service-card">
+
+                <div class="service-top">
+                    <span class="service-number">06</span>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                </div>
+
+                <h3>GIS &amp; Mapping</h3>
+
+                <p>
+                    Working with geographic information, spatial data and
+                    digital mapping for location-based analysis.
+                </p>
+
+                <div class="service-tags">
+                    <span>OSM</span>
+                    <span>QGIS</span>
+                    <span>ArcGIS</span>
+                </div>
+
+                <a href="#contact" class="service-link">
+                    Discuss a Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <!-- Services CTA -->
+        <div class="services-cta reveal">
+
+            <div>
+                <h3>Have a project in mind?</h3>
+
+                <p>
+                    Let's discuss what you're trying to build and see
+                    how I can help.
+                </p>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+                Start a Conversation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== PROJECTS SECTION ==================== -->
+<section class="projects section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">Selected Work</p>
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web
+            </button>
+
+            <button class="filter-btn" data-filter="python">
+                Python
+            </button>
+          <button class="filter-btn" data-filter="gis">
+                GIS &amp; Data
+          </button>
+
+            <button class="filter-btn" data-filter="other">
+                Other
+            </button>
+
+        </div>
+
+<!-- Projects Grid -->
+<div class="projects-grid reveal">
+
+    {% if projects %}
+
+        {% for project in projects %}
+
+            <article
+                class="project-card"
+                data-category="{{ project.category }}"
+            >
+              
+              
+              <figure class="project-image">
+                
+                {% if project.image %}
+                
+                <img
+                  src="{{ project.image.url }}"
+                  alt="{{ project.title }}"
+                  loading="lazy"
+                  decoding="async"
+                  >
+
+                 {% else %}
+
+                 <div class="project-image-placeholder">
+                   <i class="fa-solid fa-code"></i>
+                   <span>Project Preview</span>
+                 </div>
+
+                 {% endif %}
+
+
+                <div class="project-overlay">
+
+                {% if project.project_url %}
+                <a
+                  href="{{ project.project_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View {{ project.title }} live project"
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                {% endif %}
+
+
+                {% if project.github_url %}
+                <a
+                  href="{{ project.github_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View {{ project.title }} source code"
+                  >
+                  <i class="fa-brands fa-github"></i>
+                 </a>
+                 {% endif %}
+
+                 </div>
+
+                </figure>
+
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        {{ project.get_category_display }}
+                    </span>
+
+                    <h3>
+                        {{ project.title }}
+                    </h3>
+
+                    <p>
+                        {{ project.description }}
+                    </p>
+
+
+                    {% if project.technologies %}
+                   
+                  <div class="project-tech">
+                    {% for technology in project.technology_list %}
+                    
+                    <span>{{ technology }}</span>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+
+
+                    {% if project.project_url %}
+
+                        <a
+                            href="{{ project.project_url }}"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    {% endif %}
+
+                </div>
+
+             </article>
+
+            {% endfor %}
+
+           {% else %}
+
+          <div class="no-projects">
+            <p>No projects yet</p>
+          </div>
+
+       {% endif %}
+
+     </div>
+      <div class="projects-count">
+
+        <strong>
+          {{ project_count }}
+        </strong>
+        
+        <span>
+          Projects Completed
+       </span>
+
+     </div>
+
+  </div>
+
+</section>
+
+      
+
+<!-- ==================== TESTIMONIALS SECTION ==================== -->
+<section class="testimonials section" id="testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">Recommendations</p>
+            <h2>What People <span>Say</span></h2>
+        </div>
+
+
+      <div class="testimonials-slider-wrapper reveal">
+        <div class="testimonials-grid"
+          data-testimonial-count="{{ testimonials|length }}">
+          
+          
+          {% if testimonials %}
+          
+          {% for testimonial in testimonials %}
+          
+          <article class="testimonial-card">
+
+           <div class="testimonial-quote">
+             <i class="fa-solid fa-quote-left"></i>
+           </div>
+
+
+            <p class="testimonial-text">
+                {{ testimonial.message }}
+            </p>
+
+
+            <div class="testimonial-rating"
+              aria-label="{{ testimonial.rating }} out of 5 stars">
+              
+              {% for i in "12345" %}
+              {% if forloop.counter <= testimonial.full_stars %}
+              <i class="fa-solid fa-star"></i>
+              {% elif forloop.counter == testimonial.full_stars|add:"1" and testimonial.has_half_star %}
+              <i class="fa-solid fa-star-half-stroke"></i>
+              
+              {% else %}
+              
+              <i class="fa-regular fa-star"></i>
+              {% endif %}
+              
+              {% endfor %}
+            
+            </div>
+
+
+            <div class="testimonial-author">
+
+                <figure class="testimonial-avatar">
+
+                    {% if testimonial.client_image %}
+
+                        <img
+                            src="{{ testimonial.client_image.url }}"
+                            alt="{{ testimonial.client_name }}"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                    {% else %}
+
+                        <i class="fa-solid fa-user"></i>
+
+                    {% endif %}
+
+                </figure>
+
+
+                <div>
+
+                    <h4>
+                        {{ testimonial.client_name }}
+                    </h4>
+
+                    <span>
+
+                        {% if testimonial.client_role %}
+                            {{ testimonial.client_role }}
+                        {% endif %}
+
+                        {% if testimonial.client_role and testimonial.client_company %}
+                            ,
+                        {% endif %}
+
+                        {% if testimonial.client_company %}
+                            {{ testimonial.client_company }}
+                        {% endif %}
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    {% endfor %}
+    {% else %}
+          
+          <div class="no-testimonials">
+
+            <i class="fa-regular fa-comment-dots"></i>
+            <p>
+              Be the first to share your experience.
+            </p>
+          
+          </div>
+
+{% endif %}
+        </div>
+      </div>
+
+   <!--  ====== Testimonial/Feedback ==============-->
+      <div class="testimonial-action">
+        
+        <p> Ever with me before?</p>
+        <a href="{% url 'submit_testimonial' %}"
+          class="btn btn-primary">
+          Leave your Feedback
+        <i class="fa-solid fa-star"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">Get In Touch</p>
+            <h2>Let's Work <span>Together</span></h2>
+        </div>
+
+
+        <div class="contact-container reveal">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <p class="contact-intro">
+                    Have a project, opportunity or idea you'd like
+                    to discuss? Send me a message and I'll get back
+                    to you.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <!-- Email -->
+                    <a href="mailto:your-email@example.com"
+                       class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>your-email@example.com</strong>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Phone -->
+                    <a href="https://wa.link/4wrgtn"
+                       class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <span>Phone</span>
+                            <strong>+234 704 618 8667</strong>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Location -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <strong>Lagos, Nigeria</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Social Links -->
+                <div class="contact-social">
+
+                    <span>Follow me</span>
+
+                    <div>
+
+                        <a href="https://www.github.com/ten496910" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/borntowin017" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://wa.link/4wrgtn" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+
+                <form class="contact-form" id="contact-form"
+                  method="POST">
+                  {% csrf_token %}
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this about?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary contact-submit"
+                    >
+                        Send Message
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                  
+                  <p
+                   class="form-status"
+                   id="form-status"
+                   role="status"
+                   aria-live="polite"
+                   >
+                   {% if contact_success %}
+                   Your message has been sent successfully. Thank you!
+                   {% elif contact_form.non_field_errors %}
+                   {{ contact_form.non_field_errors }}
+                   {% endif %}
+                 </p>
+
+                    <p class="form-note">
+                        I'll review your message and respond as soon
+                        as possible.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-main reveal">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="#home" class="footer-logo">
+                    Augustine<span>.</span>
+                </a>
+
+                <p>
+                    Web developer and Python developer focused on
+                    building practical, responsive and user-friendly
+                    digital solutions.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <a href="#services">Web Development</a>
+                <a href="#services">Python Development</a>
+                <a href="#services">Backend Development</a>
+                <a href="#services">Data Analysis</a>
+                <a href="#services">GIS &amp; Mapping</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3>Get In Touch</h3>
+
+                <a href="mailto:your-email@example.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    your-email@example.com
+                </a>
+
+                <a href="tel:+2340000000000">
+                    <i class="fa-solid fa-phone"></i>
+                    +234 XXX XXX XXXX
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Lagos, Nigeria
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Augustine Miracle Samuel.
+                All rights reserved.
+            </p>
+
+            <p>
+                Built with
+                <i class="fa-solid fa-code"></i>
+                and dedication.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+    <!-- Main JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
+

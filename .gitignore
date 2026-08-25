@@ -1,0 +1,37 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Django
+db.sqlite3
+*.log
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded media
+media/
+
+# Collected static files
+staticfiles/
+
+# IDE / editors
+.vscode/
+.idea/
+
+# Acode / temporary files
+.acode/
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF

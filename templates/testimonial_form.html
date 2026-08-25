@@ -1,0 +1,205 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Leave a Testimonial</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/style.css' %}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<main class="section testimonial-submit-page">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                Client Feedback
+            </p>
+
+            <h1>
+                Share Your <span>Experience</span>
+            </h1>
+
+            <p>
+                I'd love to hear about your experience
+                working with me.
+            </p>
+
+        </div>
+
+
+        <div class="contact-form-wrapper">
+
+
+            <form
+                method="POST"
+                enctype="multipart/form-data"
+                class="contact-form"
+            >
+
+                {% csrf_token %}
+
+
+                {% if form.non_field_errors %}
+
+                    <div class="form-status">
+
+                        {{ form.non_field_errors }}
+
+                    </div>
+
+                {% endif %}
+
+
+                <div class="form-group">
+
+                    <label for="{{ form.client_name.id_for_label }}">
+                        Your Name
+                    </label>
+
+                    {{ form.client_name }}
+
+                    {{ form.client_name.errors }}
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="{{ form.client_role.id_for_label }}">
+                            Your Role
+                        </label>
+
+                        {{ form.client_role }}
+
+                        {{ form.client_role.errors }}
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="{{ form.client_company.id_for_label }}">
+                            Company / Organization
+                        </label>
+
+                        {{ form.client_company }}
+
+                        {{ form.client_company.errors }}
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="{{ form.client_image.id_for_label }}">
+                        Profile Photo
+                    </label>
+
+                    {{ form.client_image }}
+
+                    {{ form.client_image.errors }}
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="{{ form.rating.id_for_label }}">
+                        Your Rating
+                    </label>
+
+                    {{ form.rating }}
+
+                    {{ form.rating.errors }}
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="{{ form.project.id_for_label }}">
+                        Project
+                    </label>
+
+                    {{ form.project }}
+
+                    {{ form.project.errors }}
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="{{ form.message.id_for_label }}">
+                        Your Testimonial
+                    </label>
+
+                    {{ form.message }}
+
+                    {{ form.message.errors }}
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+
+                    Submit Testimonial
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+
+                <p class="form-note">
+
+                    Your testimonial will be reviewed before
+                    appearing publicly on this portfolio.
+
+                </p>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+</body>
+
+</html>
