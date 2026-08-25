@@ -135,3 +135,14 @@ def testimonial_success(request):
     "testimonial_success.html"
   )
 
+
+
+
+from django.http import JsonResponse
+from django.db import connection
+
+
+def database_check(request):
+    return JsonResponse({
+        "database": connection.vendor,
+    })
