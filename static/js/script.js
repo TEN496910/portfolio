@@ -380,6 +380,46 @@ filterButtons.forEach((button) => {
 
 });
 
+/* =========================================================
+                    PROJECT READ MORE
+   ========================================================= */
+
+document.querySelectorAll(".project-description").forEach((description) => {
+
+    const text = description.querySelector(".description-text");
+    const button = description.querySelector(".read-more-btn");
+
+    if (!text || !button) return;
+
+
+    /* Check whether the description actually exceeds two lines */
+
+    const isOverflowing = text.scrollHeight > text.clientHeight + 2;
+
+    if (isOverflowing) {
+        button.style.display = "inline-block";
+    }
+
+
+    /* Toggle expanded state */
+
+    button.addEventListener("click", () => {
+
+        const expanded = description.classList.toggle("expanded");
+
+        button.setAttribute(
+            "aria-expanded",
+            expanded ? "true" : "false"
+        );
+
+        button.textContent = expanded
+            ? "Read less"
+            : "Read more";
+
+    });
+
+});
+
 
 
 

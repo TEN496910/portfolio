@@ -962,9 +962,19 @@
                         {{ project.title }}
                     </h3>
 
-                    <p>
+                  
+                  <div class="project-description">
+                    <p class="description-text">
                         {{ project.description }}
                     </p>
+                    <button
+                      type="button"
+                      class="read-more-btn"
+                      aria-expanded="false"
+                      >
+                      Read more
+                   </button> 
+                  </div>
 
 
                     {% if project.technologies %}

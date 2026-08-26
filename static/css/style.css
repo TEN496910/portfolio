@@ -1074,6 +1074,7 @@ img {
 }
 
 .project-card {
+    position:relative;
     overflow: hidden;
     background: var(--white);
     border: 1px solid var(--border);
@@ -1195,7 +1196,165 @@ img {
     display: none;
 }
 
+/* =========================================================
+                    PROJECT DESCRIPTION
+   ========================================================= */
 
+.project-description {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.description-text {
+    margin: 0;
+
+    line-height: 1.6;
+
+    /* Show only two lines initially */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    overflow: hidden;
+
+    transition: max-height 0.35s ease;
+}
+
+/* Read More button */
+
+.read-more-btn {
+    display: none;
+
+    margin-top: 5px;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--primary);
+
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.read-more-btn:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+                  EXPANDED PROJECT DESCRIPTION
+   ========================================================= */
+
+.project-description.expanded {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    /* Decription aninmation */
+    bottom: 0;
+
+    z-index: 10;
+
+    padding: 18px;
+
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-description.expanded .description-text {
+    display: block;
+
+    /* decription grows only in card */
+  
+
+    max-height: 180px;
+
+    overflow-y: auto;
+
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+
+    padding-right: 4px;
+}
+
+.project-description.expanded .read-more-btn {
+    display: block;
+}
+
+
+/* Close text */
+
+.read-more-btn::after {
+    content: "";
+}
+
+/* =========================================================
+                         PROJECTS COMPLETED COUNTER
+   ========================================================= */
+
+.projects-count {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.projects-count strong {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.projects-count span {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+
+/* No projects styling */
+
+.no-projects {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.no-projects p {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 1.25rem;
+    font-weight: 800;
+}
 
 /* =========================================================
                       11. TESTIMONIALS SECTION
@@ -1282,6 +1441,156 @@ img {
     color: var(--text-muted);
     font-size: 0.6rem;
 }
+
+/* ========================================================
+                        TESTIMONIAL STAR RATING
+   ========================================================= */
+
+.testimonial-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 12px 0;
+}
+
+.testimonial-rating i {
+    color: #d4af37;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+                     TESTIMONIAL CAROUSEL
+   ========================================================= */
+
+.testimonials-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.testimonials-slider-wrapper.is-carousel
+.testimonials-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 20px;
+    width: max-content;
+
+    transition: transform 0.8s ease;
+    will-change: transform;
+}
+
+
+.testimonials-slider-wrapper.is-carousel
+.testimonial-card {
+    flex: 0 0 var(--testimonial-card-width);
+    width: var(--testimonial-card-width);
+
+    opacity: 0.45;
+
+    transform: scale(0.94);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.testimonials-slider-wrapper.is-carousel
+.testimonial-card.testimonial-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+/* =======================================================
+          Testimonial/Feedback section
+   ======================================================*/
+.testimonial-action {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.testimonial-action p {
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+
+
+
+.no-testimonials {
+    grid-column: 1 / -1;
+
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.no-testimonials i {
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.no-testimonials p {
+    margin: 0 0 20px;
+
+    color: var(--dark);
+
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* =========================================================
+                           ON MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .testimonials-slider-wrapper.is-carousel
+    .testimonials-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+
+    .testimonials-slider-wrapper.is-carousel
+    .testimonial-card {
+        flex: 0 0 var(--testimonial-card-width);
+        width: var(--testimonial-card-width);
+        min-width: var(--testimonial-card-width);
+
+        opacity: 0.45;
+        transform: scale(0.96);
+    }
+
+
+    .testimonials-slider-wrapper.is-carousel
+    .testimonial-card.testimonial-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
 
 /* =========================================================
                          10. CONTACT SECTION
@@ -1951,212 +2260,5 @@ textarea:focus-visible,
 select:focus-visible {
     outline: 3px solid var(--primary);
     outline-offset: 3px;
-}
-
-
-/* =========================================================
-                         PROJECTS COMPLETED COUNTER
-   ========================================================= */
-
-.projects-count {
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-}
-
-.projects-count strong {
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--primary);
-}
-
-.projects-count span {
-    font-size: 1rem;
-    color: var(--text-light);
-    font-weight: 500;
-}
-
-
-/* =========================================================
-                        TESTIMONIAL STAR RATING
-   ========================================================= */
-
-.testimonial-rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin: 12px 0;
-}
-
-.testimonial-rating i {
-    color: #d4af37;
-    font-size: 0.95rem;
-}
-
-
-/* =========================================================
-   TESTIMONIAL CAROUSEL
-   ========================================================= */
-
-.testimonials-slider-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-
-.testimonials-slider-wrapper.is-carousel
-.testimonials-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    gap: 20px;
-    width: max-content;
-
-    transition: transform 0.8s ease;
-    will-change: transform;
-}
-
-
-.testimonials-slider-wrapper.is-carousel
-.testimonial-card {
-    flex: 0 0 var(--testimonial-card-width);
-    width: var(--testimonial-card-width);
-
-    opacity: 0.45;
-
-    transform: scale(0.94);
-
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-
-.testimonials-slider-wrapper.is-carousel
-.testimonial-card.testimonial-active {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 2;
-}
-
-
-/* =========================================================
-                            MOBILE
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-    .testimonials-slider-wrapper.is-carousel
-    .testimonials-grid {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-    }
-
-
-    .testimonials-slider-wrapper.is-carousel
-    .testimonial-card {
-        flex: 0 0 var(--testimonial-card-width);
-        width: var(--testimonial-card-width);
-        min-width: var(--testimonial-card-width);
-
-        opacity: 0.45;
-        transform: scale(0.96);
-    }
-
-
-    .testimonials-slider-wrapper.is-carousel
-    .testimonial-card.testimonial-active {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-}
-
-/* =======================================================
-          Testimonial/Feedback section
-   ======================================================*/
-.testimonial-action {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.testimonial-action p {
-    margin-bottom: 15px;
-    color: var(--text-light);
-    font-size: 0.85rem;
-}
-
-
-
-
-.no-testimonials {
-    grid-column: 1 / -1;
-
-    min-height: 220px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 40px 20px;
-
-    text-align: center;
-
-    background: var(--background);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
-
-.no-testimonials i {
-    margin-bottom: 15px;
-
-    font-size: 2rem;
-    color: var(--primary);
-}
-
-.no-testimonials p {
-    margin: 0 0 20px;
-
-    color: var(--dark);
-
-    font-size: 1rem;
-    font-weight: 800;
-}
-
-
-
-.no-projects {
-    grid-column: 1 / -1;
-
-    width: 100%;
-    min-height: 260px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 40px 20px;
-
-    text-align: center;
-
-    background: var(--background);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
-
-.no-projects p {
-    margin: 0;
-
-    color: var(--dark);
-
-    font-size: 1.25rem;
-    font-weight: 800;
 }
 
