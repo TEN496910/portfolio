@@ -9,7 +9,7 @@ from core.views import database_check, media_check
 
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("m1gAt/", admin.site.urls),
     path("", include("core.urls")),
     path("database-check/", database_check, name="database_check"),
     path("media-check/", media_check, name="media_check"),

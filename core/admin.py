@@ -31,6 +31,13 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
+
+    def has_add_permission(self, request):
+      return False
+
+    def has_view_permission(self, request, obj=None):
+      return True
+  
     list_display = (
         "client_name",
         "rating",
@@ -61,6 +68,4 @@ class TestimonialAdmin(admin.ModelAdmin):
 
     list_per_page = 20
 
-    def has_add_permission(self, request):
-        return False
 
