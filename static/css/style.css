@@ -1265,7 +1265,7 @@ img {
 
     padding: 18px;
 
-    background: var(--white);
+    background: hwb(0 100% 0% / 0.8666666666666667);
 
     border-radius: var(--radius);
 
