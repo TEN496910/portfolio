@@ -291,8 +291,3 @@ AXES_FAILURE_LIMIT = 5
 AXES_COOLOFF_TIME = 1
 AXES_RESET_ON_SUCCESS = True
 
-
-
-# For debugging remove ones solved
-DEBUG = os.getenv("DJANGO_DEBUG", "False").lower() in ("1","true","yes")
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "my-portfolio-wdzz.onrender.com").split(",")
