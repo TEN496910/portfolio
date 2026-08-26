@@ -1,3 +1,6 @@
+import os
+from django.http import JsonResponse
+
 from django.shortcuts import render, redirect
 from .models import Project, Testimonial
 from .forms import ContactForm, TestimonialForm
@@ -152,3 +155,15 @@ def database_check(request):
         "project_table_exists": Project._meta.db_table in tables,
         "testimonial_table_exists": Testimonial._meta.db_table in tables,
     })
+
+
+def media_check(request):
+    media_root = settings.MEDIA_ROOT
+
+    return JsonResponse({
+        "media_root": str(media_root),
+        "exists": os.path.exists(media_root),
+        "is_directory": os.path.isdir(media_root),
+        "writable": os.access(media_root, os.W_OK),
+    })
+  
