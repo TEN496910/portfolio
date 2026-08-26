@@ -60,6 +60,15 @@ ALLOWED_HOSTS = [
 ]
 
 # =========================================================
+#                ADMIN ACCESS SECURITY
+# =========================================================
+
+ADMIN_ACCESS_CODE = os.environ.get(
+    "ADMIN_ACCESS_CODE",
+    ""
+)
+
+# =========================================================
 #                    PRODUCTION SECURITY
 # =========================================================
 
@@ -101,6 +110,7 @@ CSRF_TRUSTED_ORIGINS = [
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'axes',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -116,6 +126,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'axes.middleware.AxesMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -269,3 +280,13 @@ CONTACT_EMAIL = os.environ.get(
     EMAIL_HOST_USER
 )
 
+
+AUTHENTICATION_BACKENDS = [
+    'axes.backends.AxesStandaloneBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+
+AXES_FAILURE_LIMIT = 5
+AXES_COOLOFF_TIME = 1
+AXES_RESET_ON_SUCCESS = True
