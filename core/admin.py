@@ -58,5 +58,9 @@ class TestimonialAdmin(admin.ModelAdmin):
     list_editable = (
         "approved",
     )
-  
+
     list_per_page = 20
+
+    def has_add_permission(self, request):
+        return False
+
