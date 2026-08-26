@@ -161,13 +161,21 @@ def database_check(request):
 def media_check(request):
     media_root = settings.MEDIA_ROOT
 
+    before_exists = os.path.exists(media_root)
+
+    os.makedirs(media_root, exist_ok=True)
+
+    after_exists = os.path.exists(media_root)
+
     return JsonResponse({
         "media_root": str(media_root),
-        "exists": os.path.exists(media_root),
+        "before_exists": before_exists,
+        "after_exists": after_exists,
         "is_directory": os.path.isdir(media_root),
         "writable": os.access(media_root, os.W_OK),
         "storage_class": default_storage.__class__.__name__,
         "storage_location": getattr(default_storage, "location", None),
         "storage_base_url": getattr(default_storage, "base_url", None),
     })
+  
   
